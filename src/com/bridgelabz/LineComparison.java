@@ -10,6 +10,16 @@ public class LineComparison {
         else
             System.out.println("Lines are not equals...");
     }
+    //Method For Comparing Line
+    static void compareTo(Integer length1,Integer length2){
+        int result = length1.compareTo(length2);  //comparing two lines with compareTo method
+        if(result>0)
+            System.out.println("Line 1 is greater... :");
+        else if(result<0)
+            System.out.println("Line 2 is greater... : ");
+        else
+            System.out.println("Both lines are Equal...");
+    }
 
     public static void main(String[] args) {
 
@@ -31,5 +41,6 @@ public class LineComparison {
         System.out.println("Length of second line is : " + length2);
         // calling the equals method by passing 2 objects which we created from a String class
         equalsTo(length1,length2);
+        compareTo(length1, length2);
     }
 }
