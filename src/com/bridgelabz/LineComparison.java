@@ -2,6 +2,15 @@ package com.bridgelabz;
 
 public class LineComparison {
 
+    static void equalsTo(Integer lenght1, Integer lenght2){
+        boolean result = lenght1.equals(lenght2);
+
+        if ( result == true )
+            System.out.println("Length of lines is Equal");
+        else
+            System.out.println("Lines are not equals...");
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Welcome to the Line Comparison Problem. ");
@@ -20,5 +29,7 @@ public class LineComparison {
         //calculating length2 of y
         Integer length2 = (int)Math.sqrt((c2-c1)*2 + (d2-d1)*2);
         System.out.println("Length of second line is : " + length2);
+        // calling the equals method by passing 2 objects which we created from a String class
+        equalsTo(length1,length2);
     }
 }
